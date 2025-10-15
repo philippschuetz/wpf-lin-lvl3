@@ -8,7 +8,7 @@
   ];
 
   networking = {
-    hostName = "docu.FI-C-32.oszimt.lan";
+    hostName = "docu_FI-C-32_oszimt_lan";
     useDHCP = true;
     firewall = {
       enable = true;
