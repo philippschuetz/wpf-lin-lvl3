@@ -29,6 +29,7 @@
         device = "/dev/sda";
       };
     };
+  swraid.enable = true;
   };
 
   fileSystems."/" = {
