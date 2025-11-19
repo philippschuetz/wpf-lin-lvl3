@@ -52,7 +52,7 @@
   };
 
   fileSystems."/data" = {
-    device = "/dev/disk/by-label/DATA";
+    device = "/dev/md0";
     fsType = "ext4";
   };
 
