@@ -29,7 +29,12 @@
         device = "/dev/sda";
       };
     };
-  swraid.enable = true;
+    swraid = {
+      enable = true;
+      mdadmConf = ''
+        ARRAY /dev/md0 metadata=1.2 spares=1 UUID=f154420a:8e7593fa:0218174d:bf5c7bd4
+      '';
+    };
   };
 
   fileSystems."/" = {
