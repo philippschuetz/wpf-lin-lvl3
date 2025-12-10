@@ -1,0 +1,5 @@
+{
+  imports = [
+    ./restic-server.nix
+  ];
+}
