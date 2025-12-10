@@ -10,4 +10,15 @@ in
         "--no-auth"
       ];
     };
+    fileSystems."/var/lib/restic" = {
+      depends = [
+        "/backup"
+        "/var/lib/restic"
+      ];
+      device = "/backup";
+      fsType = "none";
+      options = [
+        "bind"
+      ];
+    };
   }
